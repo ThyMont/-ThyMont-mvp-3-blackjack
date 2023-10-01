@@ -9,6 +9,7 @@ COPY /requirements.txt .
 
 # Copia o código-fonte para o diretório de trabalho
 COPY . .
+EXPOSE 5001
 
 # Instala as dependências do projeto
 RUN pip install --no-cache-dir -r requirements.txt
